@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cuestion.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=League+Gothic&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="body">
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <div class="whatsapp-button">
+        
+        <a href="https://wa.me/1135791843">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" alt="WhatsApp">
+            
+        </a>
+        
+    </div>
+<div class="encabezado">
+    <nav class="navbar">
+        <img class="logo mx-4 my-2" src="./img/LogoVin12.jpg" alt="logo">
+        <button id="menu-button" class="menu-button mr-3">&#9776;</button>
+        <div id="menu" class="menu">
+            <a id="in" href="./index.html"><img src="./img/LogoVin12.jpg" alt="logo"></a>
+            <a id="dj" href="./index.html">Dama Juanas</a>
+            <a id="vin" href="./index.html">Vinos</a>
+            <a id="SM" href="./cuestion.html">Saber más</a> 
+            <a id="cont" href="./contacto.html">Contactos</a>
+            <div id="Modo" class="d-flex" style="position:relative">
+                <button class="mode" onclick="cambiarTema()"><i id="i" class="fa-solid fa-moon"></i></button>
+                <div id="conta" class="conta">Modo Oscuro</div>
+            </div>
+            <p class="menu-footer-text">© 2023 Brickwall.Web</p>
+        </div>
+    </nav>
+
+</div>
+<div id="nuevo-contenido" class="div">
+    <!-- Div y Span -->
+    <div class="div">
+        <h2 class="h2">Información de los vinos</h2>
+    </div>
+
+    <!-- Imagen con texto alternativo -->
+    <img class="img" src="./img/vino-meme.jpg" alt="meme de un provador de vinos">
+
+    <!-- Video -->
+    <p class="p">¿Como se hacian los vinos en la antiguedad?</p>
+    <span class="span">A continuación, se lo mostraremos.</span>
+    <div class="div">
+       
+        
+        <video class="video" width="320" height="240" controls>
+            <source src="./img/BobPatiño.mp4" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+        </video>
+    </div>
+
+    <!-- Tags para textos -->
+    <p class="p">Los Simpsons explican <em class="em">TODO</em>.</p>
+    <h2 class="h2">Tipos de <strong class="strong">VINOS</strong></h2>
+
+    <!-- Tabla -->
+    <table class="table">
+        <tr>
+            <th class="th">Blanco</th>
+            <th class="th">Tinto</th>
+        </tr>
+        <tr>
+            <td class="td">Chardonnay</td>
+            <td class="td">Malbec</td>
+        </tr>
+        <tr>
+            <td class="td">Verdejo</td>
+            <td class="td">Merlot</td>
+        </tr>
+        <tr>
+            <td class="td">Albariño</td>
+            <td class="td">Tannat</td>
+        </tr>
+        <tr>
+            <td class="td">Viognier</td>
+            <td class="td">Bonarda</td>
+        </tr>
+    </table>
+
+    <!-- Listas -->
+    <div class="cont-list">
+        <h2 class="h2">Ingredientes principales</h2>
+        <ul class="ul">
+            <li class="li">Uva</li>
+            <li class="li">Levadura</li>
+        </ul>
+        <h2 class="h2">Pasos para hacer vino casero</h2>
+        <ol class="ol">
+            <li class="li">Preparación de las uvas</li>
+            <li class="li">Fermentación primaria</li>
+            <li class="li">Prensado</li>
+            <li class="li">Fermentación secundaria</li>
+            <li class="li">Trasiego y maduración</li>
+            <li class="li">Embotellado</li>
+            <li class="li">Almacenamiento</li>
+        </ol>
+    </div>
+</div>
+</main>
+<footer class="site-footer">
+    <div class="container-footer ">
+        <div class="footer-content">
+            <div class="footer-section ">
+                <h3 class="">Alumnos/Autores</h3>
+                <hr>
+                <div>
+                    <p>Emanuel Ivan Gonzales Palmer</p>
+                    <p>Tomás Orti</p>
+                    <p>Ezequiel Vaccalluzzo</p>
+                </div>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Instituto</h3>
+                <hr>
+                <div>
+                    <p>Nuestras Señora del Buen Viaje </p>
+                    <p>Email: BuenViajeinstituto@gmail.com </p>
+                    <p>Año de cursada: 2 año </p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="footer-section">
+                <h3 class="">Redes Sociales</h3>
+                <hr>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=61550903788098" class="fs-2" id="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@vinoysodaclasico" class="fs-2" id="tiktok"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                    <li><a href="https://www.instagram.com/clasicos.norte/" class="fs-2" id="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Horario de Atención</h3>
+                <hr>
+                <div>
+                    <p>Lunes a Viernes: 9:00 AM - 5:00 PM</p>
+                    <p>Sábado: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+</body>
+
+</html>

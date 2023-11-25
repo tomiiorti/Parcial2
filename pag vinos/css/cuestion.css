@@ -1,0 +1,448 @@
+:root {
+
+    --color-principal: #7a2021; /* Rojo vino */
+    --color-secundario-1: #6a1c1d; /* Terracota */
+    --color-secundario-2: #f9eec5; /* Amarillo dorado */
+    --color-secundario-3: #f8efce; /* Marrón oscuro */
+    --color-texto: #000000; /* Gris oscuro */
+    --color-fondo: rgba(245, 230, 203, 0.817); /* Gris claro */
+    --color-enfasis: #edebeb; /* Rojo intenso */
+    --color-texto2: #ffffff;
+    --color-fondo-inv: #333;
+
+    /* Modo oscurito*/
+
+    --color-principal-d: #bf2a2c; 
+    --color-secundario-1-d: #b2262b; 
+    --color-secundario-2-d: #423939; 
+    --color-secundario-3-d: #464545; 
+    --color-texto-d: #f0d0d0; 
+    --color-fondo-d: #333333; 
+    --color-enfasis-d: #555555; 
+    --color-texto2-d: #000000; 
+    --color-fondo-inv-d: #bcbaba;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    background-color: var(--color-fondo);
+    
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    border-radius: 2rem;
+   
+ 
+}
+.mode{
+    background-color: transparent;
+    text-decoration: none;
+    color:var(--color-texto2);
+    margin-right: 1rem;
+    padding-top: 1rem;
+    border: transparent;
+}
+.conta{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+/* navbar */
+
+.navbar {
+    width: 100vw;
+    background:radial-gradient( 90% 80% ,var(--color-secundario-1),var(--color-principal));
+    color: var(--color-texto2);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    
+    
+}
+
+.menu-button {
+  
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    color: var(--color-texto2);
+    cursor: pointer;
+    margin-right: 4rem;
+    transition:color 0.4s ease;
+}
+.menu-button:hover {
+  color: #393737;
+}
+
+.menu {
+    position: fixed; /* Cambia a position: fixed */
+    top: 0;
+    right: -25rem;
+    bottom: 0; /* Agrega un fondo que cubra toda la página */
+    width: 25rem;
+    background:radial-gradient(90% 95%,var(--color-principal),black) ;
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.menu a img{
+    border-radius: 2rem;
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+   position: relative;
+   right: 1rem;
+}
+.menu a {
+    color:var(--color-texto2);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+#in{
+    margin-bottom: 5rem;
+}
+.conta{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+.menu a:hover {
+    color: rgb(188, 187, 187);
+    text-decoration: underline;
+}
+.cont-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px; /* Puedes ajustar este valor según sea necesario */
+    margin: 0 auto; /* Esto centrará el contenedor */
+}
+
+
+.menu .menu-footer-text {
+    position: absolute; /* Establece la posición absoluta */
+    bottom: 0; /* Lo coloca en la parte inferior del menú */
+    left: 0; /* Lo coloca en el lado izquierdo del menú */
+    color: #999;
+    font-size: 12px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+    text-align: center; /* Para centrar el texto en el "footer" del menú */
+    width: 100%; /* Asegura que ocupe todo el ancho del menú */
+}
+
+.menu.active {
+    right: 0;
+   
+}
+
+.content {
+    margin-right: 0; /* Inicialmente sin margen a la derecha */
+    transition: margin-right 0.3s ease;
+}
+
+
+
+/* Añade margen a la derecha cuando el menú está activo */
+.menu.active + .content {
+    margin-right: 25rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    z-index: 998; /* Z-index detrás del menú */
+    opacity: 0; /* Inicialmente transparente */
+    pointer-events: none; /* Evita eventos en el overlay */
+    transition: opacity 0.3s; /* Efecto de transición de opacidad */
+}
+/* carousel*/
+.carousel {
+    max-height:50%;
+}
+.carousel .slide{
+    height: 60vh;
+}
+.carousel-inner{
+    height: 60vh;
+    
+}
+
+    
+
+/* estilo de las tarjetas */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto) ;
+    
+
+}
+
+/* ws*/
+/* Estilos base para el botón de WhatsApp */
+.whatsapp-button {
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+/*volver*/
+#scrollToTopBtn {
+    display: block;
+    position: fixed;
+    bottom: 9rem;
+    right: 2.75rem;
+    background-color: #333;
+    color: #fff;
+    font-size: medium;
+    padding: 10px 18px;
+    border: 2px solid rgb(120, 119, 119) ;
+    border-radius: 14rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 998;
+    
+}
+
+/* Estilos para el icono */
+
+
+.whatsapp-button a {
+    text-decoration: none;
+}
+
+.whatsapp-button img {
+    width: 6rem; /* Tamaño del icono de WhatsApp */
+    border: 4px solid #25d366; /* Borde con el color de WhatsApp */
+    border-radius: 50%; /* Forma circular del botón */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.2s;
+}
+
+/* Efecto hover */
+.whatsapp-button:hover img {
+    background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #128c7e;
+    filter:opacity(30%)
+}
+/* footer*/
+#facebook:hover{
+    color: #3b5998;
+}
+#tiktok:hover{
+    background: radial-gradient(circle at 30% 107%, #000000 0%, #ffffff 5%, #3608da 35%,#db1111 20%,#0535c5 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 35%,#d6249f 20%,#285AEB 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#linkedin:hover{
+    color: #0e76a8 ;
+}
+.vertical-line {
+    border-left: .7px solid #ffffff; /* Puedes ajustar el grosor y el color de la línea */
+     /* Puedes ajustar la altura de la línea vertical */
+    margin: 0 1px; /* Puedes ajustar el espacio a izquierda y derecha de la línea */
+}
+.vertical-line2 {
+    border-left: .7px solid #ffffff; /* Puedes ajustar el grosor y el color de la línea */
+    /* Puedes ajustar la altura de la línea vertical */
+    margin: 0 1px; /* Puedes ajustar el espacio a izquierda y derecha de la línea*/ 
+}
+.social-icons a {
+    color: #fff; /* Cambiar el color de los enlaces */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color, 0.3s;
+}
+
+.social-icons i {
+    margin-right: 10px;
+}
+.site-footer {
+    display: flex;
+
+    margin-top: 10rem;
+    background-color: var(--color-fondo-inv); /* Cambiar el color de fondo */
+    color: var(--color-texto2) !important; /* Cambiar el color del texto */
+    padding: 20px 0; /* Agregar espacio alrededor del contenido */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1 0 200px; /* Esto significa que cada sección puede crecer y encoger, pero su base es de 200px */
+    margin: 10px;
+}
+.container-footer {
+    max-width: 120rem; /* Limitar el ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px; /* Ajustar el tamaño del encabezado */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px; /* Ajustar el tamaño del texto */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: var(--color-texto2); /* Cambiar el color de los enlaces */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons i {
+    margin-right: 10px;
+}
+.conocenos {
+    position: absolute;
+    right: 1rem;
+    top: 30rem;
+}
+#nuevo-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos adicionales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color:var(--color-texto);
+}
+
+th, td {
+    border: 1px solid var(--color-enfasis);
+    padding: 10px;
+    color:var(--color-texto);
+}
+
+th {
+    background-color: var(--color-secundario-2);
+    color:var(--color-texto);
+}
+h2{
+    color:var(--color-texto);
+}
+.div,
+.h2,
+.img,
+.p,
+.span,
+.video,
+.em,
+.strong,
+.table,
+.th,
+.td,
+.cont-list,
+.ul,
+.li,
+.ol {
+    color:var(--color-texto);
+}
+/*cel*/
+@media screen and (max-width: 600px) {
+    .html{overflow-x: hidden;}
+    .carousel .slide{
+        height: auto;
+    }
+    .carousel-inner{
+        height: auto;
+    }
+  .whatsapp-button img {
+    width: 4rem;}
+    .menu-button {
+  
+        background: none;
+        border: none;
+        font-size: 2.4rem;
+        color: var(--color-texto2);
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+    #scrollToTopBtn {
+        display: block;
+        position: fixed;
+        bottom: 8rem;
+        right: 1.9rem;
+        background-color: #333;
+        color: #fff;
+        font-size: medium;
+        padding: 10px 18px;
+        border: 2px solid rgb(120, 119, 119) ;
+        border-radius: 14rem;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 998;
+    }
+    .vertical-line {
+        display: none;
+        border-left: .7px solid #ffffff; /* Puedes ajustar el grosor y el color de la línea */
+         /* Puedes ajustar la altura de la línea vertical */
+        margin: 0 1px; /* Puedes ajustar el espacio a izquierda y derecha de la línea */
+    }
+    .vertical-line2 {
+        display: none;
+        border-left: .7px solid #ffffff; /* Puedes ajustar el grosor y el color de la línea */
+        /* Puedes ajustar la altura de la línea vertical */
+        margin: 0 1px; /* Puedes ajustar el espacio a izquierda y derecha de la línea*/ 
+    }
+  }

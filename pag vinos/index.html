@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=League+Gothic&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Página Principal</title>
+</head>
+<body class="body">
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <div class="whatsapp-button">
+        
+        <a href="https://wa.me/1135791843">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" alt="WhatsApp">
+            
+        </a>
+        
+    </div>
+<div class="encabezado">
+    <nav class="navbar">
+        <img class="logo mx-4 my-2" src="./img/LogoVin12.jpg" alt="">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar Producto" name="search">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </div>                                        
+        <button id="menu-button" class="menu-button mr-3">&#9776;</button>
+        <div id="menu" class="menu">
+            <a id="in" href="#"><img src="./img/LogoVin12.jpg" alt="logo"></a>
+            <a id="dj" href="#damajuana">Dama Juanas</a>
+            <a id="vin" href="#vino">Vinos</a>
+            <a id="SM" href="./cuestion.html">Saber más</a> 
+            <a id="cont" href="./contacto.html">Contactos</a>
+            <div id="Modo" class="d-flex" style="position:relative">
+                <button class="mode" onclick="cambiarTema()"><i id="i" class="fa-solid fa-moon"></i></button>
+                <div id="conta" class="conta">Modo Oscuro</div>
+            </div>
+            <p class="menu-footer-text">© 2023 Brickwall.Web</p>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/dc51bdd99241d6249ffdcb281877932a.jpg" class="d-block w-100" alt="carusel">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/dc51bdd99241d6249ffdcb281877932a.jpg" class="d-block w-100" alt="carusel">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/dc51bdd99241d6249ffdcb281877932a.jpg" class="d-block w-100" alt="carusel">
+          </div>
+        </div>
+      </div>
+    
+</div>
+<div class="divid"><img src="./img/Divisor.png" alt="divisor"></div>
+<div class="multimedia">
+    <iframe width="640" height="360" src="./audios/videoplayback.mp4" frameborder="0" allowfullscreen></iframe>
+    <audio controls start="7s" end="16s">
+    <source src="./audios/sirviendo.mp3" type="audio/mp3">
+    Nuestros Vinos
+  </audio>
+</div>
+<!--<div class="conocenos">
+    <h3 style="color:white">Nombre Empresa</h3>
+    <p style="color:white">Descripcion de la empresa</p>
+    <a class="custom-link" href="./cuestion.html">Saber mas</a>
+</div>-->
+
+<main class="main">
+    
+<div class="title" id="damajuana"><h2 >Damajuana</h2></div>
+<div class="divid"><img src="./img/Divisor.png" alt="divisor"></div>
+<div class="caja">
+    <div class="tarje" id="damajuana malbe">
+        <div class="prod">
+           
+            <div class="img-prod"></div>
+            <div class="contenido">
+            <h2 >Damajuana Malbe </h2>
+            <div class="test">
+                <p>Un vino versátil con sabores intensos y taninos suaves. Perfecto para quienes buscan un vino con carácter.</p>
+            </div>
+           
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="caja">
+        
+        <div class="tarje" id="damajuana tinto abocado">
+            <div class="prod">
+                <div class="img-prod1"></div>
+                <div class="contenido">
+                <h2>Damajuana Tinto abocado</h2>
+                <p>Este vino tinto tiene una tendencia hacia lo dulce, lo que lo hace perfecto para aquellos que buscan un equilibrio entre los sabores robustos del tinto y la dulzura.</p>
+            </div>
+        </div>
+        
+        </div>
+        
+        </div>
+        <div class="caja">
+            <div class="tarje" id="damajuana rosado dulce">
+                <div class="prod">
+                    <div class="img-prod2"></div>
+                    <div class="contenido">
+                    <h2>Damajuana Rosado dulce </h2>
+                    <p>Un vino fresco con aromas intensos a fresas y cerezas. Ideal para disfrutar en una tarde soleada o como aperitivo.</p>
+                </div>
+                
+            </div>
+            </div>
+            
+            </div>  
+            <div class="caja">
+                <div class="tarje" id="damajuana blanco">
+                    <div class="prod">
+                        <div class="img-prod3"></div>
+                        <div class="contenido">
+                        <h2>Damajuana Blanco</h2>
+                        <p>Un vino ligero y refrescante, perfecto para los días calurosos. Sus sabores cítricos y florales te transportarán a un jardín en pleno verano.</p>
+                    </div>
+                </div>
+                </div>
+                </div>  
+                <div class="caja">
+                    <div class="tarje" id="damajuana malbec">
+                        <div class="prod">
+                            <div class="img-prod4"></div>
+                            <div class="contenido">
+                            <h2>Damajuana Malbec</h2>
+                            <p>Un vino tinto Malbec con carácter y cuerpo.
+                                Perfecto para aquellos que buscan disfrutar de un tinto robusto y lleno de personalidad.</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>  
+                    <div class="caja">
+                        <div class="tarje" id="damajuana blanco dulce">
+                            <div class="prod">
+                                <div class="img-prod5"></div>
+                                <div class="contenido">
+                                <h2>Damajuana Blanco dulce</h2>
+                                <p> ¿Eres amante de lo dulce? Este vino es para ti. Con su sabor afrutado y dulce, es el acompañante perfecto para postres o simplemente para disfrutar solo.</p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>  
+                        </main>
+
+                        <div class="title" id="vino"><h2>Vinos</h2></div>
+                        <div class="divid"><img src="./img/Divisor.png" alt="divisor"></div>
+                        <main class="main">
+                        <div class="caja">
+                            <div class="tarje" id="galan blanco">
+                                <div class="prod">
+                                    <div class="img-prod6"></div>
+                                    <div class="contenido">
+                                    <h2>Galan "<strong>Blanco</strong>"</h2>
+                                    <p>Un vino blanco fresco y ligero que cautiva con su sutilidad. 
+                                        Ideal para quienes buscan un blanco fácil de disfrutar en cualquier ocasión.</p>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="caja">
+                                <div class="tarje" id="galan tinto">
+                                    <div class="prod">
+                                        <div class="img-prod7"></div>
+                                        <div class="contenido">
+                                        <h2>Galan <strong> Tinto</strong></h2>
+                                        <p>Un vino tinto de carácter intenso y robusto. Con notas profundas de frutas y taninos equilibrados, 
+                                            Ideal para acompañar comidas o disfrutar en momentos especiales.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="caja">
+                                    <div class="tarje" id="galan tinto patero">
+                                        <div class="prod">
+                                            <div class="img-prod8"></div>
+                                            <div class="contenido">
+                                            <h2>Galan <strong> Tinto Patero</strong></h2>
+                                            <p>Un vino tinto artesanal y auténtico, con un sabor genuino que refleja la tradición. 
+                                                Perfecto para quienes buscan una experiencia vinícola única y llena de carácter.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>  
+                                    <div class="caja">
+                                        <div class="tarje" id="irina blanco dulce">
+                                            <div class="prod">
+                                                <div class="img-prod9"></div>
+                                                <div class="contenido">
+                                                <h2>Irina <strong>Blanco Dulce</strong></h2>
+                                                <p>Un vino blanco con una deliciosa dulzura, perfecto para paladares que buscan una experiencia refrescante y suave.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>  
+                                        
+                                            
+        
+</main>
+</div>
+</div>
+<footer class="site-footer">
+    <div class="container-footer ">
+        <div class="footer-content">
+            <div class="footer-section ">
+                <h3 class="">Alumnos / Autores</h3>
+                <hr>
+                <div>
+                    <p>Emanuel Ivan Gonzalez Palmer</p>
+                    <p>Tomas Orti</p>
+                    <p>Ezequiel Vaccalluzzo</p>
+                </div>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Instituto</h3>
+                <hr>
+                <div>
+                    <p>Nuestras Señora del Buen Viaje </p>
+                    <p>Email: BuenViajeinstituto@gmail.com </p>
+                    <p>Año de cusrsada: 2 año </p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="footer-section">
+                <h3 class="">Redes Sociales</h3>
+                <hr>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=61550903788098" class="fs-2" id="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@vinoysodaclasico" class="fs-2" id="tiktok"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+                    <li><a href="https://www.instagram.com/clasicos.norte/" class="fs-2" id="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Horario de Atención</h3>
+                <hr>
+                <div>
+                    <p>Lunes a Viernes: 9:00 AM - 5:00 PM</p>
+                    <p>Sábado: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+</body>
+
+</html>

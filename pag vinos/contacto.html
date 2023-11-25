@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style3.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=League+Gothic&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="body">
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <div class="whatsapp-button">
+        
+        <a href="https://wa.me/1135791843">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" alt="WhatsApp">
+            
+        </a>
+        
+    </div>
+<div class="encabezado">
+    <nav class="navbar">
+        <img class="logo mx-4 my-2" src="./img/LogoVin12.jpg" alt="">
+        <button id="menu-button" class="menu-button mr-3">&#9776;</button>
+        <div id="menu" class="menu">
+            <a id="in" href="./index.html"><img src="./img/LogoVin12.jpg" alt=""></a>
+            <a id="dj" href="./index.html">Dama Juanas</a>
+            <a id="vin" href="./index.html">Vinos</a>
+            <a id="cont" href="./cuestion.html">Saber Más</a>
+            <a id="cont" href="#">Contactos</a>
+            <div id="Modo" class="d-flex" style="position:relative">
+                <button class="mode" onclick="cambiarTema()"><i id="i" class="fa-solid fa-moon"></i></button>
+                <div id="conta" class="conta">Modo Oscuro</div>
+            </div>
+            <p class="menu-footer-text">© 2023 Brickwall.Web</p>
+        </div>
+    </nav>
+    
+<section>
+    <h1>Formulario de Contacto</h1>
+
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <label>Preferencias:</label>
+        <input type="radio" id="opcion1" name="preferencia" value="opcion1">
+        <label for="opcion1">Vinos</label>
+
+        <input type="radio" id="opcion2" name="preferencia" value="opcion2">
+        <label for="opcion2">Damajuanas</label>
+
+        <input type="radio" id="opcion3" name="preferencia" value="opcion3">
+        <label for="opcion3">Ambas</label>
+
+        <label>Comercio:</label>
+        <select name="disciplinas">
+            <option value="disciplina1">Pequeño</option>
+            <option value="disciplina2">Mediano</option>
+            <option value="disciplina3">Grande</option>
+        </select>
+
+        <label>Intereses:</label>
+        <input type="checkbox" id="interes1" name="intereses[]" value="interes1">
+        <label for="interes1">Comercializar</label>
+
+        <input type="checkbox" id="interes2" name="intereses[]" value="interes2">
+        <label for="interes2">Uso Personal</label>
+
+        <input type="checkbox" id="interes3" name="intereses[]" value="interes3">
+        <label for="interes3">Eventos</label>
+
+        <label for="disciplina">Cometarios:</label>
+        <input list="disciplinas" name="disciplina" id="disciplina">
+        <datalist id="disciplinas">
+            <option value="Disciplina A">
+            <option value="Disciplina B">
+            <option value="Disciplina C">
+        </datalist>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+</div>
+</div>
+<footer class="site-footer">
+    <div class="container-footer ">
+        <div class="footer-content">
+            <div class="footer-section ">
+                <h3 class="">Dirección</h3>
+                <hr>
+                <div>
+                    <p>123 Calle Principal</p>
+                    <p>Ciudad, País</p>
+                </div>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Contacto</h3>
+                <hr>
+                <div>
+                    <p>Email: info@tusitio.com</p>
+                    <p>Teléfono: +1 (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="footer-section">
+                <h3 class="">Redes Sociales</h3>
+                <hr>
+                <ul class="social-icons">
+                    <li><a href="#" class="fs-2" id="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="fs-2" id="twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" class="fs-2" id="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="fs-2" id="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="vertical-line2"></div>
+            <div class="footer-section">
+                <h3 class="">Horario de Atención</h3>
+                <hr>
+                <div>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p>Sábado: 10:00 AM - 3:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+</body>
+
+</html>
